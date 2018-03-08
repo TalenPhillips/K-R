@@ -12,10 +12,16 @@ This repo is a personal exploration of the exercises in
     Git
     GitHub
 
-Code should use the C17 standard when possible and follow modern idioms.
+Code should use the C11 standard when possible and follow modern idioms.
 
 Each program should be compiled with the -Wall flag, and should show zero
-warnings. If warnings cannot be avoided, they will be noted in comments.
+warnings. If warnings cannot be avoided (or are part of an exercize), they will
+be noted in comments.
+
+Use the following compiler command:
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                 gcc [FILE NAME] -std=c11 -O3 -pedantic -Wall                 │
+└──────────────────────────────────────────────────────────────────────────────┘
 
 Code should not extend beyond the 80th column.
 
@@ -26,6 +32,13 @@ Code should be "const correct", and use type modifiers (short, long, unsigned)
 and type qualifiers (const, volatile, static, register) whenever appropriate.
 
 Unicode box-drawing characters should be used to format boilerplate, function
-headers, and other major comments.
+headers, and other major comments:
+┌──────┬──────┐    ╔══════╦══════╗    ╒══════╤══════╕    ╓──────╥──────╖
+│      │      │    ║      ║      ║    │      │      │    ║      ║      ║
+│      │      │    ║      ║      ║    │      │      │    ║      ║      ║
+├──────┼──────┤    ╠══════╬══════╣    ╞══════╪══════╡    ╟──────╫──────╢
+│      │      │    ║      ║      ║    │      │      │    ║      ║      ║
+│      │      │    ║      ║      ║    │      │      │    ║      ║      ║
+└──────┴──────┘    ╚══════╩══════╝    ╘══════╧══════╛    ╙──────╨──────╜
 
 TODO: define naming and capitalization styles.
