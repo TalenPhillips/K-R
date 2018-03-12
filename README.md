@@ -19,9 +19,9 @@ warnings. If warnings cannot be avoided (or are part of an exercize), they will
 be noted in comments.
 
 Use the following compiler command:
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                 gcc [FILE NAME] -std=c11 -O3 -pedantic -Wall                 │
-└──────────────────────────────────────────────────────────────────────────────┘
+    ┌──────────────────────────────────────────────────────────────────────┐
+    │             gcc [FILE NAME] -std=c11 -O3 -pedantic -Wall             │
+    └──────────────────────────────────────────────────────────────────────┘
 
 Code should not extend beyond the 80th column.
 
@@ -33,12 +33,12 @@ and type qualifiers (const, volatile, static, register) whenever appropriate.
 
 Unicode box-drawing characters should be used to format boilerplate, function
 headers, and other major comments:
-┌──────┬──────┐    ╔══════╦══════╗    ╒══════╤══════╕    ╓──────╥──────╖
-│      │      │    ║      ║      ║    │      │      │    ║      ║      ║
-│      │      │    ║      ║      ║    │      │      │    ║      ║      ║
-├──────┼──────┤    ╠══════╬══════╣    ╞══════╪══════╡    ╟──────╫──────╢
-│      │      │    ║      ║      ║    │      │      │    ║      ║      ║
-│      │      │    ║      ║      ║    │      │      │    ║      ║      ║
-└──────┴──────┘    ╚══════╩══════╝    ╘══════╧══════╛    ╙──────╨──────╜
+    ┌──────┬──────┐    ╔══════╦══════╗    ╒══════╤══════╕    ╓──────╥──────╖
+    │      │      │    ║      ║      ║    │      │      │    ║      ║      ║
+    │      │      │    ║      ║      ║    │      │      │    ║      ║      ║
+    ├──────┼──────┤    ╠══════╬══════╣    ╞══════╪══════╡    ╟──────╫──────╢
+    │      │      │    ║      ║      ║    │      │      │    ║      ║      ║
+    │      │      │    ║      ║      ║    │      │      │    ║      ║      ║
+    └──────┴──────┘    ╚══════╩══════╝    ╘══════╧══════╛    ╙──────╨──────╜
 
 TODO: define naming and capitalization styles.
