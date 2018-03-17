@@ -3,14 +3,14 @@
 This repo is a personal exploration of the exercises in
 "The C Programming Language" (second edition) along with the following tools:
 
-    * Visual Studio Code — with the following extensions:
-        ..* C/C++ (IntelliSense)
-        ..* C/C++ Snippets
-        ..* GitHub
-    * Linux Mint
-    * GCC (v7.2)
-    * Git
-    * GitHub
+* Visual Studio Code — with the following extensions:
+..* C/C++ (IntelliSense)
+..* C/C++ Snippets
+..* GitHub
+* Linux Mint
+* GCC (v7.2)
+* Git
+* GitHub
 
 Code should use the C11 standard when possible and follow modern idioms.
 
