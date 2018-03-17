@@ -4,9 +4,9 @@ This repo is a personal exploration of the exercises in
 "The C Programming Language" (second edition) along with the following tools:
 
 * Visual Studio Code — with the following extensions:
-..* C/C++ (IntelliSense)
-..* C/C++ Snippets
-..* GitHub
+  * C/C++ (IntelliSense)
+  * C/C++ Snippets
+  * GitHub
 * Linux Mint
 * GCC (v7.2)
 * Git
