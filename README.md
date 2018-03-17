@@ -3,14 +3,14 @@
 This repo is a personal exploration of the exercises in
 "The C Programming Language" (second edition) along with the following tools:
 
-    Visual Studio Code — with the following extensions:
-        C/C++ (IntelliSense)
-        C/C++ Snippets
-        GitHub
-    Linux Mint
-    GCC (v7.2)
-    Git
-    GitHub
+    * Visual Studio Code — with the following extensions:
+        ..* C/C++ (IntelliSense)
+        ..* C/C++ Snippets
+        ..* GitHub
+    * Linux Mint
+    * GCC (v7.2)
+    * Git
+    * GitHub
 
 Code should use the C11 standard when possible and follow modern idioms.
 
@@ -19,9 +19,11 @@ warnings. If warnings cannot be avoided (or are part of an exercize), they will
 be noted in comments.
 
 Use the following compiler command:
+```
     ┌──────────────────────────────────────────────────────────────────────┐
     │             gcc [FILE NAME] -std=c11 -O3 -pedantic -Wall             │
     └──────────────────────────────────────────────────────────────────────┘
+```
 
 Code should not extend beyond the 80th column.
 
@@ -33,6 +35,8 @@ and type qualifiers (const, volatile, static, register) whenever appropriate.
 
 Unicode box-drawing characters should be used to format boilerplate, function
 headers, and other major comments:
+
+```
     ┌──────┬──────┐    ╔══════╦══════╗    ╒══════╤══════╕    ╓──────╥──────╖
     │      │      │    ║      ║      ║    │      │      │    ║      ║      ║
     │      │      │    ║      ║      ║    │      │      │    ║      ║      ║
@@ -40,5 +44,6 @@ headers, and other major comments:
     │      │      │    ║      ║      ║    │      │      │    ║      ║      ║
     │      │      │    ║      ║      ║    │      │      │    ║      ║      ║
     └──────┴──────┘    ╚══════╩══════╝    ╘══════╧══════╛    ╙──────╨──────╜
+```
 
 TODO: define naming and capitalization styles.
