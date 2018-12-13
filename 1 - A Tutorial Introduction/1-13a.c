@@ -53,7 +53,8 @@ int main(void)
             ++wordLen;
         }
     }
-
+    ++arr[wordLen];
+    
     for (int i = min; i <= max; ++i)
     {
         printf("%3i: ", i);

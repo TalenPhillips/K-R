@@ -10,7 +10,7 @@
 #define MAXLINE 10000
 #define IN 1
 #define OUT 0
-#define CPY(to, from)   for (int cpycntr = 0; (to[cpycntr] = from[cpycntr]) != '\0'; ++cpycntr);
+#define CPY(to, from) for (int cpycntr = 0; (to[cpycntr] = from[cpycntr]) != '\0'; ++cpycntr);
 
 
 
@@ -324,12 +324,11 @@ void analyze(stat_struct * statistics)
 
 
 
-/* Function:    Statistics Function
+/* Function:    Display Function
  *
- * Description: Main control hub. Calls the other analysis functions and prints
- *              horizontal axis legends.
+ * Description: This function displays the data gathered in the statistics func
  *
- * Arguments:   none
+ * Arguments:   pointer to the statistics structure
  *
  * Returns:     nothing
  */
@@ -378,15 +377,30 @@ void display(stat_struct * statistics)
     printf("Number of characters: %d\n", statistics->chars);
     printf("Number of letters:    %d\n", statistics->letters);
     printf("Number of words:      %d\n", statistics->words);
-    printf("Number of sentences:  %d\n\n", statistics->sentences);
-    printf("Mean word length:     %.2f letters\n",1.0*statistics->letters/statistics->words);
-    printf("Mean sentence length: %.2f words\n\n",1.0*statistics->words/statistics->sentences);
+    printf("Number of sentences:  %d\n", statistics->sentences);
+    printf("Mean word length:     %.2f letters\n",
+           1.0*statistics->letters/statistics->words);
+    printf("Mean sentence length: %.2f words\n",
+           1.0*statistics->words/statistics->sentences);
 
-    printf("Longest word (%i characters): %s\n\n", max_word, statistics->long_word);
+    printf("Longest word (%i characters): %s\n",
+           max_word, statistics->long_word);
 
     if (max_sen > 0)
     {
-        printf("\nLongest sentence: %d characters.\n%s. \n\n", max_sen, statistics->long_sen);
+        printf("Longest sentence (%d characters): ", max_sen);
+        for (int i = 0; i < max_sen && i <= 100; i++)
+        {
+            if (statistics->long_sen[i] != '\n')
+            {
+                putchar(statistics->long_sen[i]);
+            }
+            else
+            {
+                putchar(' ');
+            }
+        }
+	    puts(max_sen > 100 ? "..." : ".");
     }
     else
     {
@@ -425,8 +439,6 @@ int main(void)
         {
             cont = c;
         }
-
-        putchar('\n');
     } while (cont == 'Y' || cont == 'y');
 
     return 0;
